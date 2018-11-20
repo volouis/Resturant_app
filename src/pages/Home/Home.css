@@ -1,0 +1,8 @@
+.app{
+    margin: auto;
+    max-width: 900px;
+}
+
+h1, h4{
+    text-align: center;
+}
