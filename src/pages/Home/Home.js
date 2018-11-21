@@ -25,6 +25,7 @@ class Home extends Component{
         request.get({
             url:  'http://opentable.herokuapp.com/api/restaurants?city=' + this.state.city
         },(err, response, body) =>{
+            console.log(body)
             var data = JSON.parse(body)
             var rest = []
             data.restaurants.forEach(element => {

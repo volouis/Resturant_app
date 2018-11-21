@@ -6,16 +6,16 @@ import Home from './pages/Home'
 class App extends Component {
   render() {
     return (
-      <div>
+      // <div>
 
-        <Home/>
-      </div>
-      // <Router>
-      //   <div>
-      //     <Route exact path="/" component={Home}/>
-      //     <Route exact path="/Resturant_app/" component={Home}/>
-      //   </div>
-      // </Router>
+      //   <Home/>
+      // </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/Resturant_app/" component={Home}/>
+        </div>
+      </Router>
     );
   }
 }
