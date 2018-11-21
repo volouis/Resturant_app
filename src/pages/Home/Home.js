@@ -23,7 +23,7 @@ class Home extends Component{
     handleFormSubmit = event => {
         event.preventDefault();
         request.get({
-            url:  'http://opentable.herokuapp.com/api/restaurants?city=' + this.state.city
+            url:  'https://opentable.herokuapp.com/api/restaurants?city=' + this.state.city
         },(err, response, body) =>{
             console.log(body)
             var data = JSON.parse(body)
